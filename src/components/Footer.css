@@ -1,0 +1,51 @@
+.career_footer {
+  background: #b93815;
+  color: #fff;
+  padding: 2em;
+}
+.footer_logo {
+  margin-bottom: 1em;
+}
+.career_ftlink {
+  margin-bottom: 1em;
+}
+.career_ftmar {
+  margin-bottom: 1em;
+}
+.career_ftflex {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.career_label {
+  display: none;
+}
+.career_ftlang {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.career_app {
+  width: 80%;
+}
+@media (min-width: 60rem) {
+  .career_label {
+    display: block;
+  }
+  .career_reverse {
+    flex-direction: row-reverse;
+    border-top: 1px solid;
+    padding-top: 1em;
+    margin: 2em 0;
+  }
+  .career_ftcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer ul {
+    display: flex;
+    gap: 2em;
+  }
+}
