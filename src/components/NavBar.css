@@ -1,0 +1,100 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+.mobile_navigation {
+  border: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  width: 26px;
+  height: 26px;
+  background-image: url("/assets/menu-01 (1).svg");
+}
+.close {
+  background-image: url("/assets/X.svg");
+  z-index: 100;
+}
+.search_location {
+  display: none;
+}
+.header_nav {
+  display: none;
+}
+.show_nav {
+  display: block;
+  position: fixed;
+  width: 70%;
+  height: 70%;
+  top: 0;
+  right: 0;
+}
+.header_link {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.header_ul {
+  margin-top: 4em;
+  padding-top: 1em;
+  background: #ffffff;
+  border-top: 1px solid grey;
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+@media (min-width: 60rem) {
+  header {
+    justify-content: flex-start;
+    gap: 3em;
+  }
+  .mobile_navigation {
+    display: none;
+  }
+  .search_location {
+    display: block;
+    border: 0;
+    border-bottom: 1px solid;
+    padding:1em 2em;
+    background-image: url("/assets/akar-icons_search.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  
+  }
+  .header_nav {
+    display: flex;
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 80%;
+    height: fit-content;
+    justify-content: space-between;
+  }
+  .header_ul {
+    display: flex;
+    border: 0;
+    gap: 2em;
+    margin-top: 0;
+    padding: 0;
+  }
+  .header_link {
+    margin-bottom: 0;
+  }
+  .nav_icon {
+    display: none;
+  }
+  .career_btn {
+    display: block;
+    background: #ef6820;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 0.5em 1.5em;
+    border: 0;
+  }
+}
